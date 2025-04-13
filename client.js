@@ -1,4 +1,4 @@
-const t = TrelloPowerUp.iframe();
+//const t = TrelloPowerUp.iframe();
 
 TrelloPowerUp.initialize({
   'card-buttons': function(t, options) {
