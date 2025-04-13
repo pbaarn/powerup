@@ -18,7 +18,7 @@
     "connectors": {},
     "permissions": ["read", "write"],
     "icon": {
-      "url": "https://your-icon-url.com/icon.png",
+      "url": "https://paulbaarn.nl/assets/images/clock.png",
       "height": 64,
       "width": 64
     },
