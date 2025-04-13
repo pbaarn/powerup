@@ -1,0 +1,31 @@
+{
+    "name": "Checklist Enhancer",
+    "id": "your-unique-id",
+    "api": "1.0",
+    "author": "You",
+    "description": "Add due dates and durations to checklist items",
+    "capabilities": {
+      "card-buttons": [
+        {
+          "text": "Checklist+",
+          "callback": "openChecklistPopover"
+        }
+      ],
+      "show-settings": {
+        "callback": "showSettings"
+      }
+    },
+    "connectors": {},
+    "permissions": ["read", "write"],
+    "icon": {
+      "url": "https://your-icon-url.com/icon.png",
+      "height": 64,
+      "width": 64
+    },
+    "resources": [
+      {
+        "name": "popover.html",
+        "url": "./popover.html"
+      }
+    ]
+  }

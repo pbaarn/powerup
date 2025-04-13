@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Set Duration</title>
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+</head>
+<body>
+  <label>Checklist Item ID:</label>
+  <input type="text" id="item-id" placeholder="abc123">
+  <br>
+  <label>Duration (min):</label>
+  <input type="number" id="duration">
+  <br>
+  <label>Due Date:</label>
+  <input type="datetime-local" id="due-date">
+  <br><br>
+  <button id="save">Save</button>
+
+  <script>
+    const t = TrelloPowerUp.iframe();
+
+    document.getElementById('save').addEventListener('click', function() {
+      const itemId = document.getElementById('item-id').value;
+      const duration = document.getElementById('duration').value;
+      const dueDate = document.getElementById('due-date').value;
+
+      if (!itemId) return alert('Item ID required');
+
+      t.set('card', 'shared', `checklistItem-${itemId}`, {
+        duration,
+        dueDate
+      }).then(() => t.closePopup());
+    });
+  </script>
+</body>
+</html>
