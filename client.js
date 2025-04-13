@@ -1,6 +1,6 @@
 const t = TrelloPowerUp.iframe();
 
-window.TrelloPowerUp.initialize({
+TrelloPowerUp.initialize({
   'card-buttons': function(t, options) {
     return [{
       icon: 'https://google-drive.trello.services/images/icon.svg',
