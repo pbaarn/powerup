@@ -3,7 +3,7 @@ const t = TrelloPowerUp.iframe();
 window.TrelloPowerUp.initialize({
   'card-buttons': function(t, options) {
     return [{
-      icon: 'url("https://google-drive.trello.services/images/icon.svg")',
+      icon: 'https://google-drive.trello.services/images/icon.svg',
       text: 'Checklist+',
       callback: function(t) {
         return t.popup({
